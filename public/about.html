@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        .client__grid{
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .client__card{
+            padding: 1.5rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+        }
+        .client__card i{
+            font-size: 3.5rem;
+            text-align: center;
+            margin: 25px 0px;
+            display: block;
+            color: #83b0dc;
+        }
+        .client__card h5{
+            color: aliceblue;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 0.94rem;
+        }
+        .client__card p{
+            font-size: 1rem;
+            color: #fff;
+            line-height: 1.4rem;
+        }
+        .template__container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            align-items: center;
+        }
+        .template__container .section__header{
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+        .template__container .section__subheader{
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 700;
+            
+        }
+        .template__container .description{
+            color: #fff;
+            margin-bottom: 2rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.12rem;
+        }
+        .template__image{
+            text-align: center;
+        }
+        .template__image img{
+            width: 100%;
+            max-width: 400px;
+            border-radius: 1rem;
+        }
+        @media screen and (max-width: 900px){
+            .client__grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .template__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .template__content,
+    .template__content :is(.section__subheader, .section__header){
+        text-align: center;
+    }
+    .template__image{
+        grid-area: 1/1/2/2;
+    }
+        }
+        @media screen and (max-width: 600px){
+            .client__grid{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="section__container nav__container">
+        <div class="nav__logo">boundstream</div>
+        <ul class="nav__links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="about.html">About us</a></li>
+        </ul>
+        <button class="btn1">Get started</button>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </nav>
+
+    <header class="section__container header__container">
+        <h1 class="header__heading">
+            Your lead gen agency<br>Based in Stockholm.
+        </h1>
+    </header>
+
+    <section class="section__container culture__container">
+        <h2 class="section__header">Our Culture</h2>
+        <div class="client__grid">
+            <div class="client__card">
+                <i class='bx bx-analyse'></i>
+                <h5>Feedback Loops</h5>
+                    <p>At Boundstream, we thrive on 
+                    feedback loops for continuous 
+                    improvement. We analyze results, learn, and adapt to drive better outcomes.</p>
+            </div>
+        <div class="client__card">
+            <i class='bx bxs-conversation'></i>
+            <h5>Communication</h5>
+
+                <p>We prioritize clear 
+                and responsive communication to drive 
+                successful partnerships. We listen, 
+                share insights, and stay responsive 
+                to ensure meaningful interactions and mutual success</p>
+        </div>
+            <div class="client__card">
+                <i class='bx bx-line-chart'></i>
+                <h5>Endless Growth</h5>
+                    <p>
+                    Growth isn't just a goal; it's our guiding principle. 
+                    We're dedicated to maximizing ROI through cutting-edge 
+                    automation and AI solutions, ensuring sustainable growth for partners.</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="section__container template__container">
+        <div class="template__content">
+            <h2 class="section__header">The Face Behind Boundstream</h2>
+            <p class="section__subheader">Melvin Törnros</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero consectetur itaque id adipisci rerum quas ullam repellat, amet possimus laborum explicabo reprehenderit, officiis sapiente autem doloremque nam eum. Consectetur neque voluptate id quia velit a excepturi commodi cupiditate soluta obcaecati, natus dolorem harum laboriosam tempore minus doloremque temporibus vel dolorum ratione? Sapiente, consequatur accusamus!</p>
+            <button class="btn">Let's talk</button>
+        </div>
+        <div class="image">
+            <img src="portrait.png" alt="">
+        </div>
+    </section>
+
+    <footer class="section__container footer__container">
+        <div class="footer__grid">
+            <div class="footer__col">
+                <h4>Boundstream</h4>
+                <p>
+                    <span><i class='bx bx-envelope'></i></span> melvin@boundstream.com
+                </p>
+                <p>
+                    <span><i class='bx bx-phone'></i></span> +46709992390
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Links</h4>
+                <ul class="endlink">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <div class="social__icons">
+                    <i class='bx bxl-linkedin'></i>
+                    <a href="https://twitter.com/boundstream"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/boundstream/"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="section__container footer__bar">
+        <p>Copyright &copy; 2024 Boundstream. All rights reserved.</p>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
